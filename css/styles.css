@@ -1,21 +1,35 @@
 :root{
-    --color-primary-dark: var(--color-primary-dark);
-    --color-primary-light: var(--color-primary-light);
-    --color-brand-dark: var(--color-brand-dark);
-    --color-brand-light: #819857;
+    --color-primary-dark: #31261a;
+    --color-primary-light: #faf4ea;
+    --color-secondary-dark: #a28268;
+    --color-brand-dark: #465929;
+    --color-brand-normal: #819b57;
+    --color-brand-light: #cfcfbc;
 }
 
 /* Base */
 body {
     color: var(--color-primary-dark);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    border: 4px outset darkblue;
 }
 
 h2 {
     border: 0.5rem outset pink;
 }      
 
-h1 {
-    border: 4px outset darkblue;
+.hero-title {
+    color: var(--color-primary-light);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-align: left;
+}
+
+.hero-title .accent {
+    color: var(--color-brand-light);
 }
 
 /*Button*/
@@ -53,18 +67,12 @@ ul{
 /*Link*/
 .link {
    color: var(--color-primary-light); 
+   text-decoration: none;
 }
 
 .link:hover {
     color: var(--color-brand-light);
-}
-
-.hero-title {
-   color: var(--color-primary-light); 
-}
-
-.hero-title .accent{
-    color:var(--color-brand-light);
+    text-decoration: underline;
 }
 
 .advantages-list {
@@ -72,9 +80,9 @@ ul{
    background-color: var(--color-brand-light); 
 }
 
-/* .section-title {
+.section-title {
    color: var(--color-primary-light); 
-} */
+}
 
 .section-title .accent {
     color: var(--color-brand-dark);
