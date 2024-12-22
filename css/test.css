@@ -1,0 +1,17 @@
+/* "*" - означає застосуваня до всіх блоків сторінки  */
+*{
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100px;  
+  height: 100px;
+  background-color: burlywood;
+  padding: 10px;
+  border: 2px solid darkblue;
+  border-radius: 5px;
+  /* margin: 10px; */
+  margin: 0, auto;  /*для розміщення по центру */
+  /* ! До рядкових елементів ми не можемо задавати розміри (width, high). Вони не матимуть ефекту*/
+  display: inline;
+}
