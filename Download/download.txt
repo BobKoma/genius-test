@@ -1,1 +1,16 @@
 downloaded files
+
+
+git remote add genius-test github.com/BobKoma/genius-test.git
+
+Path to My Git repo
+
+Execute git pull in terminal
+git clone https://github.com/BobKoma/genius-test.git
+git pull git-test main
+
+HTTPS:
+https://github.com/BobKoma/genius-test.git
+
+GitHubCli:
+gh repo clone BobKoma/genius-test
