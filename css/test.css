@@ -3,6 +3,14 @@
   box-sizing: border-box;
 }
 
+.dvindiv {
+    padding: 10px;
+    /* border: 2px solid darkblue; */
+    margin: 15px;
+    display: block;
+    /* display: inline-block;  --- гібрид. можливо задати розміри*/
+}
+
 .box {
   width: 100px;  
   height: 100px;
