@@ -99,10 +99,50 @@ address {
     padding: 0 24px; 
 }
 
+/*Header*/
+.header {
+   background-color: lightblue; 
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+/* Неправильний варіант
+.header-item {
+    margin-right: 64px;
+}
+
+.header-item:last-child {
+    margin-right: 0;
+} 
+    Слід робити: */
+
+
 /*Hero section*/
 .hero-section {
     padding: 272px 0;
+    /* background-color: blueviolet; */
+    background-image: url(../images/hero-section-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
 .hero-title {
     margin-bottom: 0;
     color: var(--color-primary-light);
@@ -160,6 +200,8 @@ address {
 /*List*/
 ul{
     list-style-type:none;
+    margin: 0;
+    padding: 0;
 }
 
 /*Link*/
@@ -175,14 +217,21 @@ ul{
     font-weight: 600;
 }
 
+.advantages-section{
+    padding: 16px 0;
+    background-color: var(--color-brand-normal);
+}
+
 .advantages-list {
-   color: var(--color-brand-light);
-   background-color: var(--color-brand-normal); 
+   display: flex;
+   justify-content: space-between;
+   gap: 40px;
 }
 
 .advantages-item {
    font-size: 20px;
    font-weight: 300;
+   color: var(--color-primary-light);
 }
 
 /*traditions section*/
@@ -208,7 +257,11 @@ font-weight: 600;
 }
 
 .traditions-text {
-white-space: nowrap ;
+white-space: wrap ;
+}
+
+.traditions-text.limited {
+    max-width: 340px;
 }
 
 .traditions-section {
@@ -217,6 +270,16 @@ white-space: nowrap ;
 
 .traditios-title {
  margin-bottom: 42px;
+}
+
+.traditions-container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.traditions-content {
+    max-width: 710px;
 }
 
 /* Chefs section */
@@ -248,6 +311,24 @@ white-space: nowrap ;
     font-size: 14px;
     font-weight: 300;
 }
+
+.format-card {
+    position: relative;
+    padding: 24px;
+    border: 1px solid lightcoral; /*remove after designed*/
+    border-radius: 16px;
+}
+
+.formats-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.formats-item {
+   flex-basis: calc((100% - 40px) / 3); /*40px - 2 gaps per 20px */
+}
+
 
 /* Footer */
 .address-link {

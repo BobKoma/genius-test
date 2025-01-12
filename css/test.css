@@ -3,6 +3,55 @@
   box-sizing: border-box;
 }
 
+/*flex-container describe*/
+.flex-container {
+  display: flex;
+  /* flex-direction: column; */
+  /*justify-content: space-between;  найбільш використовуване */
+  justify-content: center;
+  /* align-items:center;  /* найбільш використовуване */
+  /*flex-wrap: wrap; */
+
+}
+
+.item {
+  /* width: 100px; */
+  flex-basis: 100px;
+  height: 100px;
+  background-color: burlywood;
+  padding: 10px;
+  margin: 10px;
+  /*flex-shrink: 1; /*by default*/
+  border: 2px solid darkblue;
+  /* border-radius: 5px; */
+}
+
+/* .item:nth-child(2) {
+  width: 50px;
+  height: 50px;
+} */
+
+.item:nth-child(2) {
+  /* flex-grow: 1; */
+  flex-shrink: 0;
+  align-self:flex-end;
+  height: 40px;
+  order: 4;
+}
+
+.item:nth-child(3) {
+  flex-grow: 2;
+}
+
+
+ .item:last-child {
+  /* Замість width: 50px слід застосовувати  */
+  flex-basis: 80px;
+  height: 80px;
+}
+
+/*End Of flex-container describe*/
+
 .dvindiv {
     padding: 10px;
     /* border: 2px solid darkblue; */
