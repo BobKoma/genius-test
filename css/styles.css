@@ -49,11 +49,13 @@
     --color-brand-dark: #465929;
     --color-brand-normal: #819b57;
     --color-brand-light: #cfcfbc;
+    --color-background: #faf4ea;
 }
 
 /* Base */
 body {
     color: var(--color-primary-dark);
+    background-color: var(--color-primary-light);
     /* Обов'язкові реквізити для body!!! */
     font-family: 'Poppins', sans-serif;
     font-size: 18px; /*для відображення переважної більшості тексту на сторінці */
@@ -139,8 +141,9 @@ address {
     /* background-color: blueviolet; */
     background-image: url(../images/hero-section-background.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: top center;
+    background-size: cover; /*more used*/
+    /* background-attachment: fixed;  WOW efect*/
 }
 
 .hero-title {
@@ -242,6 +245,10 @@ ul{
     line-height: 1.3;
 }
 
+.section-title.centered {
+    text-align: center;
+}
+
 .section-title .accent {
     color: var(--color-brand-dark);
 }
@@ -290,8 +297,45 @@ white-space: wrap ;
 }
 
 .chefs-title {
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
+    margin: 0 auto 80px;
+    max-width: 520px;
 }
+
+.chef-photo {
+ border-radius: 4px 4px 4px 200px;
+ box-shadow: -16px 16px 0 0 var(--color-primary-light);
+ box-shadow: -16px 16px 0 0 var(--color-primary-light),  -16px 16px 0 2px var(--color-secondary-dark);
+}
+
+/*
+box-sizing: border-box;
+
+position: absolute;
+width: 241px;
+height: 390px;
+left: 0px;
+top: 264px;
+
+ bakery landing 1/с4 
+border: 1px solid #A28268;
+border-radius: 4px 4px 4px 200px;
+*/
+
+
+.chefs-title::before, .chefs-title::after {
+  display: block;
+  width: 352px;
+  border: 2px solid var(--color-brand-light);
+  content: '';  
+}
+
+/* .chefs-title::after {
+    display: block;
+    width: 352px;
+    border: 2px solid var(--color-brand-light);
+    content: '';
+} */
 
 /*Format section*/
 .format-title {
@@ -313,10 +357,18 @@ white-space: wrap ;
 }
 
 .format-card {
-    position: relative;
+    /* position: relative; */
+    height: 444px;
     padding: 24px;
     border: 1px solid lightcoral; /*remove after designed*/
     border-radius: 16px;
+    background-image: linear-gradient(180deg, 
+    rgba(49, 38, 26, 0) 55.21%, 
+    rgba(49, 38, 26, 0.71) 72.92%, 
+    var(--color-primary-dark) 100%);
+    /* background-image: url(../images/walrus-format.jpg); */
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
 }
 
 .formats-list {
@@ -347,3 +399,24 @@ white-space: wrap ;
 .address-copyright {
     font-size: 14px;
 }
+
+.footer {
+    background-image: url(../images/footer-background.png);
+    background-color: var(--color-primary-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Rectangle 18 */
+
+/* position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 16px; */
