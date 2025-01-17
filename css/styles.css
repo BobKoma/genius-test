@@ -381,6 +381,33 @@ border-radius: 4px 4px 4px 200px;
    flex-basis: calc((100% - 40px) / 3); /*40px - 2 gaps per 20px */
 }
 
+.carousel-button{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   width: 44px; 
+   height: 44px;
+   background-color: transparent;
+   padding: 0;
+   border-radius: 50%;
+   fill: var(--color-primary-dark);
+   border: 1px solid var(--color-primary-dark);
+   cursor: pointer;
+}
+
+/* .carousel-arrow {
+    fill: var(--color-primary-dark);
+} */
+
+.carousel-button:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+}
+
+/* .carousel-button:hover .carousel-arrow{
+    fill: var(--color-primary-light);
+} */
+
 
 /* Footer */
 .address-link {
@@ -400,6 +427,17 @@ border-radius: 4px 4px 4px 200px;
     font-size: 14px;
 }
 
+.address-social {
+    /*Alternate of color -attr, заливка  */
+   fill: var(--color-primary-light);
+   /* Обводка */
+   stroke: var(--color-brand-normal);
+}
+
+.address-social:hover {
+fill: var(--color-brand-normal);
+}
+
 .footer {
     background-image: url(../images/footer-background.png);
     background-color: var(--color-primary-dark);
@@ -407,16 +445,3 @@ border-radius: 4px 4px 4px 200px;
     background-size: cover;
     background-position: center;
 }
-
-
-/* Rectangle 18 */
-
-/* position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-background: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-border-radius: 16px; */
