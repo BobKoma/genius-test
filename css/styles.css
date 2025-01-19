@@ -299,7 +299,7 @@ white-space: wrap ;
 .chefs-title {
     /* margin-bottom: 80px; */
     margin: 0 auto 80px;
-    max-width: 520px;
+    max-width: 540px;
 }
 
 .chef-photo {
@@ -308,24 +308,9 @@ white-space: wrap ;
  box-shadow: -16px 16px 0 0 var(--color-primary-light),  -16px 16px 0 2px var(--color-secondary-dark);
 }
 
-/*
-box-sizing: border-box;
-
-position: absolute;
-width: 241px;
-height: 390px;
-left: 0px;
-top: 264px;
-
- bakery landing 1/с4 
-border: 1px solid #A28268;
-border-radius: 4px 4px 4px 200px;
-*/
-
-
 .chefs-title::before, .chefs-title::after {
   display: block;
-  width: 352px;
+  /* width: 352px; */
   border: 2px solid var(--color-brand-light);
   content: '';  
 }
@@ -337,6 +322,26 @@ border-radius: 4px 4px 4px 200px;
     content: '';
 } */
 
+.chefs-list {
+    display: flex;
+    gap: 30px;
+}
+
+.chefs-item {
+ /* flex-basis: 45%;  */
+  /* flex-basis: calc ((100%-30px)/2);  */
+flex-basis: 100%;
+}
+
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
+
+.chef-text {
+  text-align: justify;
+}
+
 /*Format section*/
 .format-title {
     font-size: 24px;
@@ -347,13 +352,16 @@ border-radius: 4px 4px 4px 200px;
     margin-bottom: 80px;
 }
 
-.contacts-title {
-     margin-bottom: 16px;
- }
-
 .format-text {
     font-size: 14px;
     font-weight: 300;
+}
+
+.formats-container{
+    display: flex;
+    /* Для центрування елементів (кнопок) контейнера по Y висоті */
+    align-items: center;
+    gap: 32px;
 }
 
 .format-card {
@@ -393,6 +401,8 @@ border-radius: 4px 4px 4px 200px;
    fill: var(--color-primary-dark);
    border: 1px solid var(--color-primary-dark);
    cursor: pointer;
+   /*Для того щоб елемент не стискався в серединв flex-контейнера*/
+   flex-shrink: 0;
 }
 
 /* .carousel-arrow {
@@ -408,6 +418,25 @@ border-radius: 4px 4px 4px 200px;
     fill: var(--color-primary-light);
 } */
 
+/* Контакти */
+.contact-container{
+    display: flex;
+    gap: 32px;
+}
+
+.contacts-title {
+    margin-bottom: 16px;
+}
+
+.contact-map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+}
+
+.contact-section{
+    padding-bottom: 96px;
+}
 
 /* Footer */
 .address-link {
