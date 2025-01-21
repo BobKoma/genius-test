@@ -49,7 +49,7 @@
     --color-brand-dark: #465929;
     --color-brand-normal: #819b57;
     --color-brand-light: #cfcfbc;
-    --color-background: #faf4ea;
+    --color-background: #faf4ea; 
 }
 
 /* Base */
@@ -74,10 +74,19 @@ h2 {
 
 /* Base settings 
 /* "*" - означає застосуваня до всіх блоків сторінки  */ 
-*{box-sizing: border-box;}
+*,
+*::before, *::after
+{
+    box-sizing: border-box;
+}
 
 h1,h2,h3,h4,h5,h6,p {
   margin-top: 0;
+}
+
+/*Щоб посилання не займало більше місця ніж потрібно*/
+a{
+    display: inline-block;
 }
 
 address {
@@ -338,9 +347,23 @@ flex-basis: 100%;
     gap: 30px;
 }
 
-.chef-text {
+/*Для всіх p-елементів класу chef-text окрім останнього */
+/* .chef-text p:not(:last-child) {
   text-align: justify;
+  margin-bottom: 24px;
+} */
+
+.chef-text p {
+    text-align: justify;
+    margin-bottom: 24px;
 }
+
+.chef-text p:last-child {
+    margin-bottom: 0;
+}
+
+/*Але залишається margin-bottom: 24px; що робить браузер за замовчуванням
+тому: */
 
 /*Format section*/
 .format-title {
