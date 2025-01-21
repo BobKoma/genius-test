@@ -439,6 +439,35 @@ flex-basis: 100%;
 }
 
 /* Footer */
+.footer {
+    /*!!! padding завжди задається для верхнього елемента*/
+    padding: 32px 0; /*padding top & bottom*/
+}
+
+.footer-container
+{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav,
+.footer-address
+{
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-logo, 
+.footer-menu
+{
+    flex-grow: 1;
+}
+
+.address-info, .address-list {
+    flex-grow: 1;
+}
+
 .address-link {
     color: var(--color-primary-light);
     font-size: 16px;
@@ -464,7 +493,7 @@ flex-basis: 100%;
 }
 
 .address-social:hover {
-fill: var(--color-brand-normal);
+    fill: var(--color-brand-normal);
 }
 
 .footer {
