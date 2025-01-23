@@ -333,13 +333,12 @@ white-space: wrap ;
 
 .chefs-list {
     display: flex;
-    gap: 30px;
+    gap: 40px 30px;
+    flex-wrap: wrap; 
 }
 
-.chefs-item {
- /* flex-basis: 45%;  */
-  /* flex-basis: calc ((100%-30px)/2);  */
-flex-basis: 100%;
+.chefs-item {   
+    flex-basis: calc((100% - 30px) / 2);  /*Обов'язково ставити пробіл між елементами формули calc !!!*/
 }
 
 .chef-card {
